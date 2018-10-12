@@ -1,3 +1,6 @@
+##Lyric Finder
+A small react app using the musixmatch api to pull in song information and lyrics
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
