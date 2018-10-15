@@ -3,6 +3,8 @@ import Tracks from "../tracks/Tracks";
 import Search from "../tracks/Search";
 import { withAuth } from "@okta/okta-react";
 
+// Login required to view tracks content
+
 class Index extends Component {
   constructor(props) {
     super(props);
@@ -57,17 +59,6 @@ class Index extends Component {
         </div>
       );
     }
-
-    // return (
-    //   <React.Fragment>
-    //     <div className="login">
-    //       <button onClick={this.login}>Login</button>
-    //       <button onClick={this.logout}>Logout</button>
-    //     </div>
-    //     <Search />
-    //     <Tracks />
-    //   </React.Fragment>
-    // );
   }
 }
 export default withAuth(Index);
