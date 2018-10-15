@@ -41,13 +41,17 @@ class Index extends Component {
         <div>
           {this.state.authenticated ? (
             <React.Fragment>
-              <button onClick={this.logout}>Logout</button>
+              <button className="btn mb-4" onClick={this.logout}>
+                Logout
+              </button>
               <Search />
               <Tracks />
             </React.Fragment>
           ) : (
             <React.Fragment>
-              <button onClick={this.login}>Login</button>
+              <button className="btn mb-4" onClick={this.login}>
+                Login
+              </button>
             </React.Fragment>
           )}
         </div>
