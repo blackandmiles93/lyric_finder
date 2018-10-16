@@ -15,6 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "aws s3 cp --recursive ./build s3://sr-srcclient-dev",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
