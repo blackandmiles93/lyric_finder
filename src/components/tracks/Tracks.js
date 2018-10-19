@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Consumer } from "../../context";
 import Spinner from "../layout/Spinner";
 import Track from "../tracks/Track";
+// import Log from "../../utils/log";
 
 class Tracks extends Component {
   render() {

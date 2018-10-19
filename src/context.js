@@ -2,6 +2,7 @@
 //do not export default since we are going to export a consumer from this as well
 import React, { Component } from "react";
 import axios from "axios";
+// import Log from "../src/utils/log";
 
 const Context = React.createContext();
 
@@ -37,7 +38,7 @@ export class Provider extends Component {
         }`
       )
       .then(res => {
-        // console.log(res.data);
+        Log.info("track info", res.data);
         this.setState({ track_list: res.data.message.body.track_list });
       })
       .catch(err => console.log(err));

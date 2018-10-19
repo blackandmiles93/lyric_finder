@@ -5,6 +5,7 @@
   "dependencies": {
     "@okta/okta-react": "^1.1.1",
     "axios": "^0.18.0",
+    "debug": "^4.1.0",
     "moment": "^2.22.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -14,9 +15,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "aws s3 cp --recursive ./build s3://sr-srcclient-dev",
+    "build": "cp ./src/config.js ./src/config.bak.js && cp ./src/config.prod.js ./src/config.js && react-scripts build && mv ./src/config.bak.js ./src/config.js",
     "test": "react-scripts test",
+    "deploy": "aws s3 cp --recursive ./build s3://sr-srcclient-dev",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -21,4 +21,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .env
-.ok.config.js
+config.js
+config.prod.js

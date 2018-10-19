@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Tracks from "../tracks/Tracks";
 import Search from "../tracks/Search";
 import { withAuth } from "@okta/okta-react";
+// import Log from "../../utils/log";
 
 // Login required to view tracks content
 
@@ -35,7 +36,6 @@ class Index extends Component {
   }
 
   render() {
-    console.log(this.props.auth);
     if (this.state.authenticated === null) {
       return <h1>Please Login</h1>;
     } else {
